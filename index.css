@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tahoma', monospace;
+}
+
+body {
+    background-color: navy;
+}
+
+.container {
+    background-color: wheat;
+    width: 80vw;
+    margin: 0vh 10vw;
+    padding: 20px;
+}
+
+.padd {
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 50%;
+    /* padding: 20px; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.card {
+    height: 290px;
+    width: 19%;
+    border-radius: 10px;
+    /* margin: 1%; */
+    background-color: red;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+.header.card.cards {
+    transform: rotateY(-180deg);
+}
+
+.overlay {
+    background-image: url('https://www.hearthstonetopdecks.com/wp-content/uploads/2014/06/card-back-pandaria.png');
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+    background-size: cover;
+    transition: all 0.3s 1s;
+}
+
+.opened {
+    display: none;
+}
